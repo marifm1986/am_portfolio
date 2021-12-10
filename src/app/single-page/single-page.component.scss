@@ -4,6 +4,8 @@
 }
 
 .panel_container {
+    display: flex;
+    flex-direction: column;
     position: relative;
     height: 100vh;
     overflow: auto;
@@ -11,15 +13,17 @@
     .panel_header{
         position: sticky;
         top: 0;
+        z-index: 1;
     }
  
     .panel_content {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        width: 1450px;
+        width: 100%;
         height: calc(100vh - 6.25rem);
         gap: 6rem;
+        padding: 0 10rem;
     }
     
 }

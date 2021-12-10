@@ -1,14 +1,18 @@
 @use "../../../../styles.scss" as style;
 .landing_page {
-    display: grid;
-    grid-template-columns: 1fr 0.6fr;
+    display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6rem;
     height: 900px;
     .content_section {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         gap: 1rem;
+        flex: 1;
+        // width: 100%;
+        min-width: 20rem;
         .welcome {
             font-size: 16px;
         }
@@ -22,22 +26,22 @@
             font-size: 20px;
             line-height: 1.8;
         }
-        .cta_wrapper{
+        .cta_wrapper {
             display: flex;
             align-items: center;
-            gap: .5rem;
-           button{
-               height: 2.8125rem;
-               border-radius: 0;
-               min-width: 10rem;
-               
-           }
+            gap: 0.5rem;
+            button {
+                height: 2.8125rem;
+                border-radius: 0;
+                min-width: 10rem;
+            }
         }
     }
     .image_wrapper {
         display: flex;
         align-items: flex-end;
         width: 500px;
+        min-width: 500px;
         height: 400px;
         border-radius: 10px;
     }

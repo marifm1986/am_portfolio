@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "amportfolio1986": {
+      "hosting": {
+        "arifPortfolio": [
+          "amportfolio1986"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "amportfolio1986"
+  }
+}
