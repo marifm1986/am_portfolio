@@ -1,0 +1,25 @@
+@use "../../styles.scss" as style;
+:host {
+    color: style.$text_color;
+}
+
+.panel_container {
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+
+    .panel_header{
+        position: sticky;
+        top: 0;
+    }
+ 
+    .panel_content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 1450px;
+        height: calc(100vh - 6.25rem);
+        gap: 6rem;
+    }
+    
+}

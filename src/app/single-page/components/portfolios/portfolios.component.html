@@ -1,0 +1,16 @@
+<div class="feature_container">
+    <span class="section_label key_text">
+        VISIT MY PORTFOLIO
+    </span>
+    <span class="section_title">
+        My Portfolio<strong class="key_text">.</strong>
+    </span>
+
+    <div class="featurs_wrapper">
+        <div class="single_feature neumorphism" *ngFor="let feature of features">
+            <img [src]="feature.image" alt="">
+            <span class="feature_title key_text">{{feature.title}}</span>
+            <span class="feature_description">{{feature.description}}</span>
+        </div>
+    </div>
+</div>

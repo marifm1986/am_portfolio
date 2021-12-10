@@ -1,0 +1,16 @@
+<div class="feature_container">
+    <span class="section_label key_text">
+        FEATURES
+    </span>
+    <span class="section_title">
+        What I Do<strong class="key_text">.</strong>
+    </span>
+
+    <div class="featurs_wrapper">
+        <div class="single_feature neumorphism" *ngFor="let feature of features">
+            <img [src]="feature.icon" alt="">
+            <span class="feature_title">{{feature.title}}</span>
+            <span class="feature_description">{{feature.description}}</span>
+        </div>
+    </div>
+</div>
