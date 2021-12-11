@@ -1,0 +1,29 @@
+.mini_overlay {
+  min-width: 24.25rem;
+  max-width: 24.25rem;
+}
+
+.compact {
+  font-size: 0.875rem;
+  position: absolute;
+  height: calc(100vh - 6.3rem);
+  max-height: calc(100vh - 6.3rem);
+  top: 3.1875rem;
+  right: 3.4375rem;
+  background: #fff;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  will-change: transform;
+  z-index: 8;
+  transition: all 0.5s ease;
+  &.large_layer {
+    z-index: 7;
+  }
+}
+
+.open {
+  transform: scaleX(1);
+  opacity: 1;
+  box-shadow: 0 0.4375rem 0.9375rem -0.125rem rgba(0, 0, 0, 0.3);
+}

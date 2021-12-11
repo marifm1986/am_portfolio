@@ -1,0 +1,83 @@
+.hx_footer {
+     max-height: 3.6em;
+     min-height: 3.6em;
+     margin-bottom: 0;
+     background: #f7f7f7;
+     display: flex;
+     align-items: center;
+
+     .footer_content {
+          margin-left: 1rem;
+          margin-right: 1em;
+          padding-right: 5em;
+          display: flex;
+          align-items: center;
+
+          //display: none;
+
+          .icon {
+               cursor: pointer;
+
+               &:active {
+                    transform: scale(0.95);
+               }
+          }
+
+          .ask_hoxro {
+               margin-right: 1em;
+               display: flex;
+               align-items: center;
+
+               span {
+                    margin-left: 0.2em;
+                    font-size: 1.1rem;
+
+                    &.icons-hoxro {
+                         color: $matter_color;
+                    }
+               }
+          }
+     }
+
+     span {
+          font-size: 1.5rem;
+     }
+}
+
+.overlay_panel_footer,
+.min_panel_footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: auto;
+     height: 3.4375rem;
+     background: $footer_color;
+     padding: 0;
+     border-bottom: $border;
+
+     .btn_cancel,
+     .btn_save,
+     .btn_back,
+     .btn_next {
+          height: 100%;
+          flex: 1;
+          border-radius: 0;
+     }
+     .btn_save,
+     .btn_next {
+          color: #fff;
+     }
+
+     .btn_cancel,
+     .btn_back {
+          background: #eee;
+     }
+}
+
+.overlay_panel_footer {
+     padding: 0 1rem;
+     button {
+          min-width: 7rem;
+          min-width: 7rem;
+     }
+}

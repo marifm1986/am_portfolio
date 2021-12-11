@@ -1,0 +1,101 @@
+.hx-loader-1 {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes spin {
+    0% {
+        background-color: #65111109;
+    }
+    10% {
+        background-color: #65581109;
+    }
+    20% {
+        background-color: #3a65111c;
+    }
+    30% {
+        background-color: #1465111c;
+    }
+    40% {
+        background-color: #1162651c;
+    }
+    50% {
+        background-color: #1162651c;
+    }
+    60% {
+        background-color: #112e651c;
+    }
+    70% {
+        background-color: #2a11651c;
+    }
+    80% {
+        background-color: #2a116509;
+    }
+    90% {
+        background-color: #65111f09;
+    }
+    100% {
+        background-color: #65111109;
+    }
+}
+
+@keyframes spin-transparent {
+    0% {
+        background-color: #65111109;
+    }
+    10% {
+        background-color: #65581109;
+    }
+    20% {
+        background-color: #3a65111c;
+    }
+    30% {
+        background-color: #1465111c;
+    }
+    40% {
+        background-color: #1162651c;
+    }
+    50% {
+        background-color: #1162651c;
+    }
+    60% {
+        background-color: #112e651c;
+    }
+    70% {
+        background-color: #2a11651c;
+    }
+    80% {
+        background-color: #2a116509;
+    }
+    90% {
+        background-color: #65111f09;
+    }
+    100% {
+        background-color: #65111109;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.hx-progress-bar-1 {
+    width: 100%;
+    height: 10px;
+    background: transparent;
+    animation: spin-transparent 25s linear infinite;
+
+    .hx-progress-bar-1--completed {
+        height: 10px;
+        background: lightblue;
+        transition: 200ms ease-out;
+    }
+}

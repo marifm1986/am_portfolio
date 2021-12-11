@@ -1,0 +1,661 @@
+// module colors variables
+$hx_color: #004b8b;
+$contact_color: #257ea9;
+$matter_color: #337fdd;
+$task_color: #7daf36;
+$ms_email_color: #0468bf;
+$ms_calendar_color: #4588e6;
+$g_email_color: #e64a3c;
+$g_calendar_color: #4285f4;
+$email_gray: #faf9f8;
+$screen_color: #c19f31;
+$library_color: #577494;
+$reports_color: #007aa8;
+$approval_color: #247356;
+$customer_color: #3d7ab1;
+$supplier_color: #d9307f;
+$disb_color: #00a82e;
+$expense_claim: #503068;
+$legal_aid_color: #262626;
+$sync_color: #00a3d3;
+$bank_color: #155c9c;
+$vat_color: #515151;
+$gl_color: #1d82bd;
+$transaction_color: #3a7e9d;
+$msonedrive_color: #0364b8;
+
+$noti_color: #f2a413;
+
+$settings_color: #5f696a;
+$ar_color: #b4bbc4;
+$ap_color: #b4abb4;
+$audit_color: #f63765;
+$sms_color: #39a60b;
+
+// module colors Classes
+.matter_color {
+  color: $matter_color;
+}
+
+.matter_color_bg {
+  background: $matter_color;
+}
+
+.contact_color {
+  color: $contact_color;
+}
+
+.contact_color_bg {
+  background: $contact_color;
+}
+
+.email_color {
+  color: $ms_email_color;
+}
+
+.email_color_bg {
+  background: $ms_email_color;
+}
+
+.calendar_color {
+  color: $ms_calendar_color;
+}
+
+.calendar_color_bg {
+  background: $ms_calendar_color;
+}
+.g_email_color {
+  color: $g_email_color;
+}
+
+.g_email_color_bg {
+  background: $g_email_color;
+}
+
+.g_calendar_color {
+  color: $g_calendar_color;
+}
+
+.g_calendar_color_bg {
+  background: $g_calendar_color;
+}
+
+.task_color {
+  color: $task_color;
+}
+
+.task_color_bg {
+  background: $task_color;
+}
+
+.library_color {
+  color: $library_color;
+}
+
+.library_color_bg {
+  background: $library_color;
+}
+
+.screen_color {
+  color: $screen_color;
+}
+
+.screen_color_bg {
+  background: $screen_color;
+}
+
+.reports_color {
+  color: $reports_color;
+}
+
+.reports_color_bg {
+  background: $reports_color;
+}
+
+.bank_color {
+  color: $bank_color;
+}
+
+.bank_color_bg {
+  background: $bank_color;
+}
+
+.settings_color {
+  color: $settings_color;
+}
+
+.settings_color_bg {
+  background: $settings_color;
+}
+
+.legal_aid_color {
+  color: $legal_aid_color;
+}
+
+.legal_aid_color_bg {
+  background: $legal_aid_color;
+}
+
+// components colors variables
+
+$letter_color: #3a7ad4;
+$memo_color: #eba400;
+$phone_out_color: #85cc00;
+$phone_in_color: #c300ff;
+$font_color: #444;
+$time_entry_color: #36454f;
+
+// components colors classes
+
+.letter_color {
+  color: $letter_color;
+}
+
+.letter_color_bg {
+  background: $letter_color;
+}
+
+.memo_color {
+  color: $memo_color;
+}
+
+.memo_color_bg {
+  background: $memo_color;
+}
+
+.phone_out_color {
+  color: $phone_out_color;
+}
+
+.phone_out_color_bg {
+  background: $phone_out_color;
+}
+
+.phone_in_color {
+  color: $phone_in_color;
+}
+
+.phone_in_color_bg {
+  background: $phone_in_color;
+}
+
+// section colors variables
+$fees_color: #c238eb;
+
+$due_color: #00a808;
+$billable_color: #f80;
+$over_due_color: #f00;
+$footer_color: #f7f7f7;
+$section_subHeader_gray: #f7f7f7;
+
+$invoice_color: #d9307f;
+$slip_color: #ff5d55;
+$office_spend_color: #3476db;
+$office_receipt_color: #3476db;
+$client_request_color: #3476db;
+$client_spend_color: #3476db;
+$bank_transfer_color: #3476db;
+
+// section colors classes
+
+.invoice_color {
+  color: $invoice_color;
+}
+
+.invoice_color_bg {
+  background: $invoice_color;
+}
+
+.fees_color {
+  color: $fees_color;
+}
+
+.fees_color_bg {
+  background: $fees_color;
+}
+
+.expense_color {
+  color: $expense_claim;
+}
+
+.expense_color_bg {
+  background: $expense_claim;
+}
+
+.disb_color {
+  color: $disb_color;
+}
+
+.disb_color_bg {
+  background: $disb_color;
+}
+
+.slip_color {
+  color: $slip_color;
+}
+
+.slip_color_bg {
+  background: $slip_color;
+}
+
+// card colors variables
+$party_color: #0089ff;
+$otherside_color: #978f81;
+$otherside_rep_color: #eee2cf;
+$client_color: #36a0d3;
+$client_rep_color: #d2ecff;
+$litigation_f_color: #a89861;
+
+// card colors classes
+.party_color {
+  color: $party_color;
+}
+
+.party_color_bg {
+  background: $party_color;
+}
+
+.otherside_color {
+  color: $otherside_color;
+}
+
+.otherside_color_bg {
+  background: $otherside_color;
+}
+
+.otherside_rep_color {
+  color: $otherside_rep_color;
+}
+
+.otherside_rep_color_bg {
+  background: $otherside_rep_color;
+}
+
+.client_color {
+  color: $client_color;
+}
+
+.client_color_bg {
+  background: $client_color;
+}
+
+.client_rep_color {
+  color: $client_rep_color;
+}
+
+.client_rep_color_bg {
+  background: $client_rep_color;
+}
+
+.litigation_f_color {
+  color: $litigation_f_color;
+}
+
+.litigation_f_color_bg {
+  background: $litigation_f_color;
+}
+
+.mat-hint {
+  &.active {
+    color: #f00 !important;
+  }
+}
+
+// common colors
+
+$gray0: #edebe9;
+$gray1: #eee;
+$gray2: #ccc;
+$gray3: #888;
+
+$font: #444;
+$placeholder: #888;
+$documents_color: #337fdd;
+$system_color: #cb0281;
+$other_color: #6d6d6d;
+$light_bg: #f7f7f7;
+
+$folder_color: #f5d370;
+
+$excel_color: #107c41;
+
+//transction Type Colors class
+
+$inv_color: $hx_color;
+$slip_color: $font;
+$cn_color: #aa0000;
+$os_color: $cn_color;
+$or_color: #1e60b1;
+$cs_color: $cn_color;
+$cr_color: #195094;
+$bt_color: #216e02;
+
+.light_bg {
+  background: $light_bg;
+}
+.folder_color {
+  color: $folder_color;
+}
+
+.inv {
+  color: $inv_color;
+  background: lighten($inv_color, 65%);
+}
+.slip {
+  color: $slip_color;
+  background: lighten($slip_color, 65%);
+}
+.cn {
+  color: $cn_color;
+  background: lighten($cn_color, 65%);
+}
+.os {
+  color: $os_color;
+  background: lighten($os_color, 65%);
+}
+.or {
+  color: $or_color;
+  background: lighten($or_color, 65%);
+}
+.cs {
+  color: $cs_color;
+  background: lighten($cs_color, 65%);
+}
+.cr {
+  color: $cr_color;
+  background: lighten($cr_color, 65%);
+}
+.bt {
+  color: $bt_color;
+  background: lighten($bt_color, 65%);
+}
+
+// color pallates
+::ng-deep.c_1 {
+  background: #bf0000 !important;
+}
+
+::ng-deep.c_2 {
+  background: #ff0204 !important;
+}
+
+::ng-deep.c_3 {
+  background: #ffc002 !important;
+}
+
+::ng-deep.c_4 {
+  background: #fdff01 !important;
+}
+
+::ng-deep.c_5 {
+  background: #93d14d !important;
+}
+
+::ng-deep.c_6 {
+  background: #00ac50 !important;
+}
+
+::ng-deep.c_7 {
+  background: #01b3f3 !important;
+}
+
+::ng-deep.c_8 {
+  background: #026eba !important;
+}
+
+::ng-deep.c_9 {
+  background: #021f65 !important;
+}
+
+::ng-deep.c_10 {
+  background: #70309f !important;
+}
+
+::ng-deep.white_0 {
+  background: #ffffff !important;
+}
+
+::ng-deep.white_1 {
+  background: #f2f2f2 !important;
+}
+
+::ng-deep.white_2 {
+  background: #d8d8d8 !important;
+}
+
+::ng-deep.white_3 {
+  background: #bfbfbf !important;
+}
+
+::ng-deep.white_4 {
+  background: #a5a5a5 !important;
+}
+
+::ng-deep.white_5 {
+  background: #7f7f7f !important;
+}
+
+// --------------
+::ng-deep.black_0 {
+  background: #000000 !important;
+}
+
+::ng-deep.black_1 {
+  background: #7f7f7f !important;
+}
+
+::ng-deep.black_2 {
+  background: #595959 !important;
+}
+
+::ng-deep.black_3 {
+  background: #3f3f3f !important;
+}
+
+::ng-deep.black_4 {
+  background: #262626 !important;
+}
+
+::ng-deep.black_5 {
+  background: #0c0c0c !important;
+}
+
+// --------------
+::ng-deep.mercury_0 {
+  background: #e7e6e6 !important;
+}
+
+::ng-deep.mercury_1 {
+  background: #d0cece !important;
+}
+
+::ng-deep.mercury_2 {
+  background: #aeabab !important;
+}
+
+::ng-deep.mercury_3 {
+  background: #757070 !important;
+}
+
+::ng-deep.mercury_4 {
+  background: #3a3838 !important;
+}
+
+::ng-deep.mercury_5 {
+  background: #171616 !important;
+}
+
+// --------------
+::ng-deep.fiord_0 {
+  background: #44546a !important;
+}
+
+::ng-deep.fiord_1 {
+  background: #d6dce4 !important;
+}
+
+::ng-deep.fiord_2 {
+  background: #cccccc !important;
+}
+
+::ng-deep.fiord_3 {
+  background: #8496b0 !important;
+}
+
+::ng-deep.fiord_4 {
+  background: #323f4f !important;
+}
+
+::ng-deep.fiord_5 {
+  background: #222a35 !important;
+}
+
+// --------------
+::ng-deep.danube_0 {
+  background: #5b9bd5 !important;
+}
+
+::ng-deep.danube_1 {
+  background: #deebf6 !important;
+}
+
+::ng-deep.danube_2 {
+  background: #bdd7ee !important;
+}
+
+::ng-deep.danube_3 {
+  background: #9cc3e5 !important;
+}
+
+::ng-deep.danube_4 {
+  background: #2e75b5 !important;
+}
+
+::ng-deep.danube_5 {
+  background: #1e4e79 !important;
+}
+
+// --------------
+::ng-deep.jaffa_0 {
+  background: #ed7d31 !important;
+}
+
+::ng-deep.jaffa_1 {
+  background: #fbe5d5 !important;
+}
+
+::ng-deep.jaffa_2 {
+  background: #f7cbac !important;
+}
+
+::ng-deep.jaffa_3 {
+  background: #f4b183 !important;
+}
+
+::ng-deep.jaffa_4 {
+  background: #c55a11 !important;
+}
+
+::ng-deep.jaffa_5 {
+  background: #833c0b !important;
+}
+
+// --------------
+::ng-deep.silver_0 {
+  background: #a5a5a5 !important;
+}
+
+::ng-deep.silver_1 {
+  background: #ededed !important;
+}
+
+::ng-deep.silver_2 {
+  background: #dbdbdb !important;
+}
+
+::ng-deep.silver_3 {
+  background: #c9c9c9 !important;
+}
+
+::ng-deep.silver_4 {
+  background: #7b7b7b !important;
+}
+
+::ng-deep.silver_5 {
+  background: #525252 !important;
+}
+
+// --------------
+::ng-deep.amber_0 {
+  background: #ffc000 !important;
+}
+
+::ng-deep.amber_1 {
+  background: #fff2cc !important;
+}
+
+::ng-deep.amber_2 {
+  background: #fee599 !important;
+}
+
+::ng-deep.amber_3 {
+  background: #ffd965 !important;
+}
+
+::ng-deep.amber_4 {
+  background: #bf9000 !important;
+}
+
+::ng-deep.amber_5 {
+  background: #7f6000 !important;
+}
+
+// --------------
+::ng-deep.indigo_0 {
+  background: #4472c4 !important;
+}
+
+::ng-deep.indigo_1 {
+  background: #d9e2f3 !important;
+}
+
+::ng-deep.indigo_2 {
+  background: #b4c6e7 !important;
+}
+
+::ng-deep.indigo_3 {
+  background: #8eaadb !important;
+}
+
+::ng-deep.indigo_4 {
+  background: #2f5496 !important;
+}
+
+::ng-deep.indigo_5 {
+  background: #1f3864 !important;
+}
+
+// --------------
+::ng-deep.apple_0 {
+  background: #70ad47 !important;
+}
+
+::ng-deep.apple_1 {
+  background: #70ad47 !important;
+}
+
+::ng-deep.apple_2 {
+  background: #c5e0b3 !important;
+}
+
+::ng-deep.apple_3 {
+  background: #a8d08d !important;
+}
+
+::ng-deep.apple_4 {
+  background: #538135 !important;
+}
+
+::ng-deep.apple_5 {
+  background: #375623 !important;
+}

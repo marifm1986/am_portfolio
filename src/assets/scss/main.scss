@@ -1,0 +1,48 @@
+@import "abstracts/animations";
+@import "abstracts/colors";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/responsive";
+@import "abstracts/variables";
+@import "abstracts/others";
+@import "base/reset";
+@import "base/typography";
+@import "components/buttons";
+@import "components/carousel";
+@import "components/mat_customs";
+@import "components/syncfusion";
+@import "components/tables";
+@import "components/tabs";
+@import "layouts/footers";
+@import "layouts/forms";
+@import "layouts/grids";
+@import "layouts/headers";
+@import "layouts/mini_overlay";
+@import "layouts/navigations";
+@import "layouts/sidebar";
+@import "layouts/matter_panel1/panel1";
+@import "layouts/matter_panel1/matter_list";
+@import "tables/_index";
+
+.screen-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

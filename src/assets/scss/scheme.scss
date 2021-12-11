@@ -1,0 +1,91 @@
+//Color Variables
+$primary_color: #113a65;
+$secondary_color: #2c7fd4;
+$info_color: #00aeef;
+$success_color: #00c851;
+$warning_color: #ffbb33;
+$danger_color: #ff1d1d;
+
+// app primary colors-------------------------------*********end
+.text-primary {
+    color: $primary_color !important;
+}
+.text-success {
+    color: $success_color !important;
+}
+.text-info {
+    color: $info_color !important;
+}
+.text-warning {
+    color: $warning_color !important;
+}
+.text-danger {
+    color: $danger_color !important;
+}
+.btn-primary,
+.btn-primary.disabled,
+.btn-primary:disabled {
+    background-color: lighten($primary_color, 10);
+    border-color: lighten($primary_color, 10);
+    &:hover {
+        background-color: lighten($primary_color, 10);
+        border-color: lighten($primary_color, 10);
+    }
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: lighten($primary_color, 10);
+    border-color: lighten($primary_color, 10);
+}
+.btn-outline-primary {
+    color: $primary_color;
+    border-color: $primary_color;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+    color: #fff;
+    background-color: lighten($primary_color, 10);
+    border-color: lighten($primary_color, 10);
+}
+.btn-info,
+.btn-info.disabled,
+.btn-info:disabled {
+    background-color: $info_color;
+    border-color: $info_color;
+}
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus {
+    background-color: darken($info_color, 8);
+    border-color: darken($info_color, 10);
+}
+.btn-info:not(:disabled):not(.disabled).active,
+.btn-info:not(:disabled):not(.disabled):active,
+.show > .btn-info.dropdown-toggle {
+    background-color: darken($info_color, 8);
+    border-color: darken($info_color, 10);
+}
+.btn-danger {
+    background-color: $danger_color;
+    border-color: $danger_color;
+}
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus {
+    background-color: darken($danger_color, 10);
+    border-color: darken($danger_color, 10);
+}
+.btn-outline-danger {
+    color: $danger_color;
+    border-color: $danger_color;
+}
+.btn-outline-danger:hover,
+.btn-outline-danger:active,
+.btn-outline-danger:focus {
+    color: #fff;
+    background-color: darken($danger_color, 10);
+    border-color: darken($danger_color, 10);
+}
+$transition: all 0.3s ease-in-out;

@@ -1,0 +1,30 @@
+.panel_header {
+  border-bottom: $border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  height: 50px;
+  max-height: 50px;
+  padding: 0 1em;
+  .icons-close {
+    font-size: 0.8rem;
+  }
+}
+
+// panel 3 overlay header title
+.header_title {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 0.5rem;
+
+  .title {
+    font-size: 1rem;
+    @include ellipsis();
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+}

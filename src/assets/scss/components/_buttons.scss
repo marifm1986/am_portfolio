@@ -1,0 +1,278 @@
+$primary_color: #337fdd;
+
+// save button ---
+.btn_save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6em;
+
+  ::ng-deep mat-spinner {
+    margin: 0 auto;
+  }
+
+  .done {
+    border-color: #008f00;
+    color: #008f00;
+  }
+
+  button {
+    &:hover {
+      background: $primary_color;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.hx_button {
+  color: #444;
+  min-width: 6em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// save button ---end
+
+.onoffswitch {
+  position: relative;
+  width: 40px;
+  user-select: none;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+  height: 22px;
+  padding: 0;
+  line-height: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+}
+
+.onoffswitch-label:before {
+  content: "OFF";
+  color: #888;
+  font-size: 8px;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  transform: translateY(-50%);
+  left: 2px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #00709d;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label,
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  border-color: #00709d;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  content: "ON";
+  left: auto;
+  right: 1px;
+  color: #00709d;
+  background-color: #ffffff;
+}
+
+.round {
+  border-radius: 20px;
+}
+
+.btn_flat {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  width: unset;
+  height: unset;
+}
+
+.click {
+  @include click_press();
+}
+
+.click2 {
+  cursor: pointer;
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.check {
+  &.active {
+    color: $matter_color;
+  }
+}
+
+// html-------------
+
+/* <div class="switch-toggler">
+<input [(ngModel)]="actionData.emailWithMatter" id="emailWithMatter" type="checkbox" />
+<label for="emailWithMatter"></label>
+</div> */
+
+// html-------------end
+
+.switch-toggler {
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + label {
+      background: lighten($matter_color, 10);
+
+      &:after {
+        left: 52%;
+      }
+    }
+  }
+
+  label {
+    outline: 0;
+    display: block;
+    width: 40px;
+    margin: 0;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    background: #ececec;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+    border: $border;
+
+    &:after,
+    &:before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 16px;
+      height: 100%;
+    }
+
+    &:after {
+      left: 0;
+      border-radius: 2em;
+      background: #fbfbfb;
+      transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &:hover:after {
+      will-change: padding;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 0 2em #e8eae9;
+
+      &:after {
+        padding-right: 0.8em;
+      }
+    }
+  }
+}
+
+.hx_round_btn {
+  border-radius: 20px;
+}
+
+.toggle_button {
+  overflow: hidden;
+  border-radius: 4px;
+  .toggle_btn {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    position: relative;
+    text-align: center;
+    transition: background 600ms ease, color 600ms ease;
+    border-radius: 0 4px 4px 0;
+    &:nth-child(2) {
+      border-radius: 4px 0 0 4px;
+    }
+  }
+  label {
+    margin: 0;
+  }
+  input[type="radio"].toggle {
+    display: none;
+    & + label {
+      cursor: pointer;
+      min-width: 60px;
+      &:hover {
+        background: none;
+        color: $primary_color;
+      }
+      &:after {
+        content: "";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+        width: 100%;
+        z-index: -1;
+        background: $primary_color;
+      }
+    }
+    &.toggle-left + label {
+      border-right: 0;
+      &:after {
+        left: 100%;
+      }
+    }
+    &.toggle-right + label {
+      border-left: 0;
+      &:after {
+        left: -100%;
+      }
+    }
+    &:checked + label {
+      cursor: default;
+      color: #fff;
+
+      transition: color 200ms;
+      &:after {
+        left: 0;
+      }
+    }
+  }
+}

@@ -14,6 +14,7 @@ import { PortfoliosComponent } from './single-page/components/portfolios/portfol
 import { ExperienceComponent } from './single-page/components/experience/experience.component';
 import { TutorialsComponent } from './single-page/components/tutorials/tutorials.component';
 import { ContactComponent } from './single-page/components/contact/contact.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ContactComponent } from './single-page/components/contact/contact.compo
     PortfoliosComponent,
     ExperienceComponent,
     TutorialsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

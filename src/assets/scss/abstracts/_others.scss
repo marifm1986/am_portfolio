@@ -1,0 +1,143 @@
+@use "../../../assets/scss/abstracts/colors" as color;
+
+$shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+$shadow2: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+$shadow3: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+$shadow4: 0 0 0 1px rgba(0, 10, 30, 0.2), 0 3px 6px 0 rgba(0, 10, 30, 0.2);
+
+$layerShadow: -3px -3px 9px rgba(0, 0, 0, 0.3);
+$border: 1px solid #ccc;
+$border_light: 1px solid #edebe9;
+$border2: 1px solid #d7e0e8;
+$border_d: 1px dashed #ccc;
+
+.isDisable {
+     pointer-events: none;
+     color: #ccc !important;
+     cursor: none !important;
+     opacity: 0.8;
+}
+
+.isDisable2 {
+     pointer-events: none;
+     cursor: none !important;
+}
+.less,
+.warning,
+.error,
+.errorMassage,
+.confirm {
+     color: #f00;
+}
+
+.remove {
+     color: #f00;
+     cursor: pointer;
+     &:active {
+          transform: translateY(2px);
+     }
+}
+
+.entity_icon {
+     font-size: 1.2rem;
+     margin-right: 0.3rem;
+     color: #257ea9;
+}
+
+.number {
+     text-align: right;
+}
+
+.text_unselect {
+     * {
+          &::selection {
+               background: none;
+          }
+     }
+}
+
+.not_hover {
+     cursor: unset;
+     pointer-events: none;
+     &:hover {
+          background: none;
+     }
+}
+
+.border_bottom {
+     border-bottom: $border;
+}
+
+::ng-deep.mat_margin_bottom_05 {
+     .mat-form-field-wrapper {
+          margin-bottom: -0.5rem;
+     }
+}
+::ng-deep.mat_margin_bottom_1_25 {
+     .mat-form-field-wrapper {
+          margin-bottom: -1.25rem;
+     }
+}
+
+.check {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-width: 1.125rem;
+     max-width: 1.125rem;
+     width: 1.125rem;
+     height: 1.125rem;
+     border: $border;
+     border-color: color.$matter_color;
+     border-radius: 50%;
+     cursor: pointer;
+     .icons-check {
+          font-size: 8px;
+          visibility: hidden;
+          color: color.$matter_color;
+     }
+     &.active {
+          background: color.$matter_color;
+          .icons-check {
+               visibility: visible;
+               color: #fff;
+          }
+     }
+     &:hover {
+          .icons-check {
+               visibility: visible;
+          }
+     }
+}
+
+::ng-deep.mat-button-wrapper {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 0.5rem;
+}
+
+// .shadow1 {
+//      @include mat.elevation(1);
+// }
+// .shadow2 {
+//      @include mat.elevation(2);
+// }
+// .shadow3 {
+//      @include mat.elevation(3);
+// }
+// .shadow4 {
+//      @include mat.elevation(4);
+// }
+// .shadow5 {
+//      @include mat.elevation(5);
+// }
+// .shadow6 {
+//      @include mat.elevation(6);
+// }
+// .shadow7 {
+//      @include mat.elevation(7);
+// }
+// .shadow8 {
+//      @include mat.elevation(8);
+// }

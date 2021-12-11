@@ -1,4 +1,5 @@
 @use "../../styles.scss" as style;
+@use "../../assets/scss/abstracts/mixins" as mix;
 :host {
     color: style.$text_color;
 }
@@ -8,22 +9,29 @@
     flex-direction: column;
     position: relative;
     height: 100vh;
-    overflow: auto;
+    
 
-    .panel_header{
+    .panel_header {
         position: sticky;
         top: 0;
         z-index: 1;
     }
- 
+
     .panel_content {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         width: 100%;
         height: calc(100vh - 6.25rem);
-        gap: 6rem;
-        padding: 0 10rem;
+        @include mix.slim_scroll((style.$key_color), #eee);
+        overflow: auto;
+        scroll-behavior: smooth;
+        padding: 2rem 10rem;
     }
-    
+    .panel_footer{
+        display: flex;
+        align-items: center;
+        height: 55px;
+        padding: 1rem;
+    }
 }

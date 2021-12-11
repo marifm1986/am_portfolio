@@ -1,0 +1,135 @@
+@use "~/../../abstracts/others" as other;
+::ng-deep mat-spinner {
+  width: 30px !important;
+  height: 30px !important;
+
+  svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+::ng-deep.mat-menu-panel {
+  padding: 0 !important;
+  width: 100% !important;
+  min-height: unset !important;
+}
+
+::ng-deep.mat-menu-content:not(:empty) {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  .mat-menu-item {
+    &:not(:nth-last-child(1)) {
+      border-bottom: other.$border_d;
+    }
+  }
+}
+
+.mat-expansion-panel-header.mat-expanded {
+  border-radius: 0;
+  height: 48px !important;
+}
+
+.mat-form-field-label {
+  color: #888 !important;
+}
+
+textarea.mat-input-element {
+  max-height: 3.75rem !important;
+  min-height: 3.75rem !important;
+}
+
+.myPanelClass {
+  margin-top: 0px !important;
+}
+.mat-select-panel-wrap {
+  margin-top: 1.5rem;
+  max-width: calc(100% - 3%) !important;
+  transform: translateX(0.5rem);
+}
+// mat select dropdown with search
+
+@mixin matSelectWidhSearch() {
+  .mat-form-field {
+    margin-top: 0.5rem;
+    min-width: 100%;
+    width: 100%;
+    padding: 0 1rem;
+
+    // .mat-form-field-label-wrapper {
+    //     left: 1rem;
+    //     width: calc(100% - 1rem);
+    // }
+  }
+  .mat-optgroup-label {
+    color: #ccc;
+    border-top: $border;
+    border-bottom: $border;
+  }
+  .mat-active {
+    background: #fff !important;
+    &.mat-option {
+      background: #fff !important;
+      font-weight: 500;
+    }
+  }
+}
+
+@mixin mat_active($value) {
+  .mat-active {
+    background: #fff !important;
+    &.mat-option {
+      background: #fff !important;
+      font-weight: 500;
+      color: $value !important;
+      .contact_type {
+        border-radius: 100%;
+        width: 1.3rem;
+        margin-left: 0.75rem;
+        padding: 0.8125rem;
+        color: #fff;
+        background: $value !important;
+      }
+    }
+    &::before {
+      content: "✔";
+      position: absolute;
+      right: 1rem;
+      font-size: 1rem;
+      color: $value !important;
+    }
+  }
+}
+
+.tab_full_width,
+::ng-deep.mini_overlay {
+  .mat-tab-label {
+    flex: 1 !important;
+  }
+}
+
+::ng-deep.mat-form-field[appearance="outline"] {
+  .mat-form-field-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@mixin mat_radio_color($value) {
+  .mat-radio-button {
+    .mat-ripple-element .mat-radio-persistent-ripple {
+      background: $value;
+    }
+    &.cdk-focused,
+    &.cdk-program-focused,
+    &.mat-radio-checked {
+      .mat-radio-inner-circle {
+        background: $value;
+      }
+      .mat-radio-outer-circle {
+        border-color: $value;
+      }
+    }
+  }
+}
