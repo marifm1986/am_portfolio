@@ -8,9 +8,12 @@
 
     <div class="featurs_wrapper">
         <div class="single_feature neumorphism" *ngFor="let feature of features">
+            <div class="image_wrapper">
             <img [src]="feature.image" alt="">
+        </div>
             <span class="feature_title key_text">{{feature.title}}</span>
             <span class="feature_description">{{feature.description}}</span>
+            <a href="feature.urls" target="_blank">Demo</a>
         </div>
     </div>
 </div>
