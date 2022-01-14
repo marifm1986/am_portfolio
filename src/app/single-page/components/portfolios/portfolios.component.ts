@@ -11,19 +11,19 @@ export class PortfoliosComponent implements OnInit {
       image: '../../../../assets/images/kanban.png',
       title: 'Web App',
       description: 'Kanban board for managing tasks.',
-      urls: 'https://kanban-fire-workshop-8ca5d.web.app/'
+      urls: 'https://kanban-fire-workshop-8ca5d.web.app'
     },
     {
       image: '../../../../assets/images/ds.png',
       title: 'Web App',
-      description: 'Designe system for fast productivity',
+      description: 'Design system for fast productivity',
       urls: 'https://designsystemhx.web.app/icons'
     },
     {
-      image: '../../../../assets/portf/03.png',
-      title: 'UI/UX Design',
+      image: '../../../../assets/images/sms.png',
+      title: 'Stock Management System',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis.',
-      urls: ''
+      urls: 'https://techwake3602021.web.app/damage'
     },
     {
       image: '../../../../assets/portf/04.png',
