@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 6rem;
-    height: 40.3125rem;
+    height: calc(100vh - 13rem);
     .content_section {
         display: flex;
         flex-direction: column;
