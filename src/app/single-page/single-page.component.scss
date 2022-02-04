@@ -21,17 +21,23 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        max-width: 1600px;
+        min-width: 40%;
         width: 100%;
         height: calc(100vh - 6.25rem);
         @include mix.slim_scroll((style.$key_color), #eee);
         overflow: auto;
         scroll-behavior: smooth;
-        padding: 2rem 10rem;
+        padding: 5%;
     }
     .panel_footer{
         display: flex;
         align-items: center;
         height: 55px;
         padding: 1rem;
+        width: 100%;
+        app-footer{
+            flex: 1;
+        }
     }
 }
